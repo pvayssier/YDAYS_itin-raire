@@ -6,43 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		E2A552802CF71446004135FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2A552672CF71444004135FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2A5526E2CF71444004135FC;
-			remoteInfo = M.I.A;
-		};
-		E2A5528A2CF71446004135FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2A552672CF71444004135FC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2A5526E2CF71444004135FC;
-			remoteInfo = M.I.A;
-		};
-/* End PBXContainerItemProxy section */
+/* Begin PBXBuildFile section */
+		E2A552B42CF7193D004135FC /* Frameworks in Frameworks */ = {isa = PBXBuildFile; productRef = E2A552B32CF7193D004135FC /* Frameworks */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2A5526F2CF71444004135FC /* M.I.A.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M.I.A.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A5527F2CF71446004135FC /* M.I.ATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M.I.ATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A552892CF71446004135FC /* M.I.AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M.I.AUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E2A552712CF71444004135FC /* M.I.A */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = M.I.A;
-			sourceTree = "<group>";
-		};
-		E2A552822CF71446004135FC /* M.I.ATests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = M.I.ATests;
-			sourceTree = "<group>";
-		};
-		E2A5528C2CF71446004135FC /* M.I.AUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = M.I.AUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,20 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A5527C2CF71446004135FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A552862CF71446004135FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E2A552B42CF7193D004135FC /* Frameworks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +38,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A552712CF71444004135FC /* M.I.A */,
-				E2A552822CF71446004135FC /* M.I.ATests */,
-				E2A5528C2CF71446004135FC /* M.I.AUITests */,
 				E2A552702CF71444004135FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				E2A5526F2CF71444004135FC /* M.I.A.app */,
-				E2A5527F2CF71446004135FC /* M.I.ATests.xctest */,
-				E2A552892CF71446004135FC /* M.I.AUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,56 +70,11 @@
 			);
 			name = M.I.A;
 			packageProductDependencies = (
+				E2A552B32CF7193D004135FC /* Frameworks */,
 			);
 			productName = M.I.A;
 			productReference = E2A5526F2CF71444004135FC /* M.I.A.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E2A5527E2CF71446004135FC /* M.I.ATests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2A552962CF71446004135FC /* Build configuration list for PBXNativeTarget "M.I.ATests" */;
-			buildPhases = (
-				E2A5527B2CF71446004135FC /* Sources */,
-				E2A5527C2CF71446004135FC /* Frameworks */,
-				E2A5527D2CF71446004135FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2A552812CF71446004135FC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E2A552822CF71446004135FC /* M.I.ATests */,
-			);
-			name = M.I.ATests;
-			packageProductDependencies = (
-			);
-			productName = M.I.ATests;
-			productReference = E2A5527F2CF71446004135FC /* M.I.ATests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E2A552882CF71446004135FC /* M.I.AUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2A552992CF71446004135FC /* Build configuration list for PBXNativeTarget "M.I.AUITests" */;
-			buildPhases = (
-				E2A552852CF71446004135FC /* Sources */,
-				E2A552862CF71446004135FC /* Frameworks */,
-				E2A552872CF71446004135FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E2A5528B2CF71446004135FC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E2A5528C2CF71446004135FC /* M.I.AUITests */,
-			);
-			name = M.I.AUITests;
-			packageProductDependencies = (
-			);
-			productName = M.I.AUITests;
-			productReference = E2A552892CF71446004135FC /* M.I.AUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -175,14 +88,6 @@
 				TargetAttributes = {
 					E2A5526E2CF71444004135FC = {
 						CreatedOnToolsVersion = 16.1;
-					};
-					E2A5527E2CF71446004135FC = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = E2A5526E2CF71444004135FC;
-					};
-					E2A552882CF71446004135FC = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = E2A5526E2CF71444004135FC;
 					};
 				};
 			};
@@ -201,28 +106,12 @@
 			projectRoot = "";
 			targets = (
 				E2A5526E2CF71444004135FC /* M.I.A */,
-				E2A5527E2CF71446004135FC /* M.I.ATests */,
-				E2A552882CF71446004135FC /* M.I.AUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E2A5526D2CF71444004135FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A5527D2CF71446004135FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A552872CF71446004135FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,34 +128,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2A5527B2CF71446004135FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A552852CF71446004135FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E2A552812CF71446004135FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2A5526E2CF71444004135FC /* M.I.A */;
-			targetProxy = E2A552802CF71446004135FC /* PBXContainerItemProxy */;
-		};
-		E2A5528B2CF71446004135FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2A5526E2CF71444004135FC /* M.I.A */;
-			targetProxy = E2A5528A2CF71446004135FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E2A552912CF71446004135FC /* Debug */ = {
@@ -446,78 +308,6 @@
 			};
 			name = Release;
 		};
-		E2A552972CF71446004135FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZD277H8K2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YnovonsPourLaSante.M-I-ATests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M.I.A.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/M.I.A";
-			};
-			name = Debug;
-		};
-		E2A552982CF71446004135FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZD277H8K2;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YnovonsPourLaSante.M-I-ATests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M.I.A.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/M.I.A";
-			};
-			name = Release;
-		};
-		E2A5529A2CF71446004135FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZD277H8K2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YnovonsPourLaSante.M-I-AUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = M.I.A;
-			};
-			name = Debug;
-		};
-		E2A5529B2CF71446004135FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3ZD277H8K2;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.YnovonsPourLaSante.M-I-AUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = M.I.A;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -539,25 +329,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E2A552962CF71446004135FC /* Build configuration list for PBXNativeTarget "M.I.ATests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2A552972CF71446004135FC /* Debug */,
-				E2A552982CF71446004135FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2A552992CF71446004135FC /* Build configuration list for PBXNativeTarget "M.I.AUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2A5529A2CF71446004135FC /* Debug */,
-				E2A5529B2CF71446004135FC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2A552B32CF7193D004135FC /* Frameworks */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Frameworks;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2A552672CF71444004135FC /* Project object */;
 }

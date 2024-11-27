@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-@preconcurrency import MapKit
+import MapKit
 
 public struct MapView: View {
     @State private var route: MKRoute?

@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
-import Map
+import Auth
 
 public struct MainView: View {
     public init() {}
 
     public var body: some View {
-        MapView()
+        AuthSelectionView()
     }
 }
 
 #Preview {
-    MainView()
+    AuthSelectionView()
 }

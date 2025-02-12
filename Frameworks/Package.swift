@@ -20,12 +20,38 @@ let package = Package(
         .target(
             name: "Core",
             dependencies: [
-                .target(name: "Map")
+                .target(name: "Map"),
+                .target(name: "Auth")
             ],
             path: "Sources/Core"),
         .target(
             name: "Map",
-            dependencies:[],
+            dependencies:[
+                .target(name: "SearchBar")
+            ],
             path: "Sources/Map"),
+        .target(
+            name: "SearchBar",
+            dependencies:[],
+            path: "Sources/SearchBar"),
+        .target(
+            name: "Auth",
+            dependencies: [
+                .target(name: "Tools"),
+                .target(name: "Map"),
+                .target(name: "Models")
+            ],
+            path: "Sources/Auth"),
+        .target(
+            name: "Tools",
+            dependencies: [
+                .target(name: "Models")
+            ],
+            path: "Sources/Tools"),
+        .target(
+            name: "Models",
+            dependencies: [],
+            path: "Sources/Models"),
+
     ]
 )

@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import SearchBar
 
 public struct MapView: View {
     @State private var route: MKRoute?
@@ -57,7 +58,7 @@ public struct MapView: View {
         //        Map(initialPosition: position)
         //            .mapStyle(.standard(elevation: .flat))
         VStack {
-            //            TextField("Enter an address", text: .constant(""))
+                    
             MapReader { proxy in
                 Map(initialPosition: position) {
                     if let route {
@@ -68,6 +69,11 @@ public struct MapView: View {
                     Marker(travelTime ?? "direction", coordinate: direction)
                 }
             }
+            .frame(maxHeight: .infinity)
+            
+            SearchBarView()
+                .padding() // Ajout d'espacement autour de la barre de recherche
+                .background(Color(UIColor.systemBackground))
         }
         .onAppear {
             fetchRoute()
@@ -77,4 +83,5 @@ public struct MapView: View {
 
 #Preview {
     MapView()
+ 
 }

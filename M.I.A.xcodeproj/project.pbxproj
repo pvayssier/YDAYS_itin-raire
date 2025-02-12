@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2397C892D5C9D09002AC744 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A2397C882D5C9D09002AC744 /* Algorithms */; };
 		E2A552B42CF7193D004135FC /* Frameworks in Frameworks */ = {isa = PBXBuildFile; productRef = E2A552B32CF7193D004135FC /* Frameworks */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2397C892D5C9D09002AC744 /* Algorithms in Frameworks */,
 				E2A552B42CF7193D004135FC /* Frameworks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = M.I.A;
 			packageProductDependencies = (
 				E2A552B32CF7193D004135FC /* Frameworks */,
+				A2397C882D5C9D09002AC744 /* Algorithms */,
 			);
 			productName = M.I.A;
 			productReference = E2A5526F2CF71444004135FC /* M.I.A.app */;
@@ -100,6 +103,9 @@
 			);
 			mainGroup = E2A552662CF71444004135FC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A2397C872D5C9D09002AC744 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E2A552702CF71444004135FC /* Products */;
 			projectDirPath = "";
@@ -339,7 +345,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A2397C872D5C9D09002AC744 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		A2397C882D5C9D09002AC744 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2397C872D5C9D09002AC744 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
 		E2A552B32CF7193D004135FC /* Frameworks */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Frameworks;

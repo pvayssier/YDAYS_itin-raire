@@ -20,12 +20,23 @@ let package = Package(
         .target(
             name: "Core",
             dependencies: [
-                .target(name: "Map")
+                .target(name: "Map"),
+                .target(name: "Profile")
             ],
             path: "Sources/Core"),
+        .target(
+            name: "Profile",
+            dependencies: [
+                .target(name: "Resources")
+            ],
+            path: "Sources/Profile"),
         .target(
             name: "Map",
             dependencies:[],
             path: "Sources/Map"),
+        .target(
+            name: "Resources",
+            dependencies:[],
+            path: "Sources/Resources")
     ]
 )

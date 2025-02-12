@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-import Map
+import Profile
 
 public struct MainView: View {
     public init() {}
 
     public var body: some View {
-        MapView()
+        ProfileView()
     }
 }
 

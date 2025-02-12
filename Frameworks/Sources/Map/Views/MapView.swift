@@ -54,25 +54,26 @@ public struct MapView: View {
     }
 
     public var body: some View {
-        //        Map(initialPosition: position)
-        //            .mapStyle(.standard(elevation: .flat))
-        VStack {
-            //            TextField("Enter an address", text: .constant(""))
-            MapReader { proxy in
-                Map(initialPosition: position) {
-                    if let route {
-                        MapPolyline(route.polyline)
-                            .stroke(.blue, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
-                    }
-                    Marker("Location", coordinate: location)
-                    Marker(travelTime ?? "direction", coordinate: direction)
-                }
-            }
-        }
-        .onAppear {
-            fetchRoute()
-        }
-    }
+          ZStack(alignment: .top) {
+              MapReader { proxy in
+                  Map(initialPosition: position) {
+                      if let route {
+                          MapPolyline(route.polyline)
+                              .stroke(.blue, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
+                      }
+                      Marker("Location", coordinate: location)
+                      Marker(travelTime ?? "direction", coordinate: direction)
+                  }
+              }
+              .edgesIgnoringSafeArea(.all)
+              LayoutView()
+                  .safeAreaPadding(.top)
+              ItinerarySheetView()
+          }
+          .onAppear {
+              fetchRoute()
+          }
+      }
 }
 
 #Preview {
